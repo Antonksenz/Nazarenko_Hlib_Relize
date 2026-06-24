@@ -18,17 +18,22 @@ a {
 }
 
 header#main, #main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 6%;
-    background-color: #050505;
-    border-bottom: 1px solid #151515;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
+    background-color: #050505;
+    border-bottom: 1px solid #151515;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
 }
 
 .zag {
@@ -39,11 +44,11 @@ header#main, #main {
 
 nav {
     display: flex;
-    gap: 30px;
+    gap: 35px;
 }
 
 .nav-link {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     color: #a0a0a0;
     text-transform: uppercase;
@@ -59,7 +64,7 @@ nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 80px;
     background-color: #050505;
 }
 
@@ -135,6 +140,10 @@ nav {
     flex-direction: column;
     text-align: center;
     overflow: hidden;
+}
+
+.menu-div:hover {
+    border-color: #cc0000;
 }
 
 .menu-img {
